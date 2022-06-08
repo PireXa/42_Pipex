@@ -1,6 +1,6 @@
 #include "pipex.h"
 
-static	char	*ft_strndup(const char *s1, int start, int end)
+char	*ft_strndup(const char *s1, int start, int end)
 {
 	char	*str;
 	size_t	i;

@@ -6,7 +6,7 @@
 /*   By: fde-albe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 14:31:50 by fde-albe          #+#    #+#             */
-/*   Updated: 2022/06/08 16:22:47 by fde-albe         ###   ########.fr       */
+/*   Updated: 2022/06/08 16:46:40 by fde-albe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ void    check_commands(int ac, char **av, char **envp);
 int 	ft_memcmp(const void *s1, const void *s2, size_t n);
 char	**ft_split(char const *s, char c);
 size_t  ft_strlen(const char *str);
+char    *ft_substr(char const *s, unsigned int start, size_t len);
+char    *ft_strdup(const char *s1);
 
 #endif
