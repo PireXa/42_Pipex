@@ -21,11 +21,15 @@ char	*ft_str_dup(const char *s1)
 void	check_commands(int ac, char **av, char **envp)
 {
 	short int	i;
-
+	char		**paths;
 	i = -1;
 	(void)ac;
 	(void)av;
 	while(ft_memcmp(envp[++i], "PATH=", 5))
 		;
-	printf("%d\n", i);
+//	printf("%d\n", i);
+	paths = ft_split(envp[i], ':');
+	int	a = -1;
+	while (paths[++a])
+		printf("%s\n", paths[a]);
 }

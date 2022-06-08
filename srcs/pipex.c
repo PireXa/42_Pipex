@@ -7,7 +7,7 @@ int main(int ac, char **av, char **envp)
 	int	pid2;
 	int	fdin;
 	int	fdout;
-	char *cmd1[] = {"/usr/local/munki/launchapp", "/Applications/Google Chrome.app",NULL};
+	char *cmd1[] = {"/bin/ls", "-a",NULL};
 	char *cmd2[] = {"/usr/bin/cat", "-e",NULL};
 
 	check_commands(ac, av, envp);

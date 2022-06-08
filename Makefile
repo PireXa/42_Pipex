@@ -6,11 +6,11 @@
 #    By: fde-albe <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/07 10:31:48 by fde-albe          #+#    #+#              #
-#    Updated: 2022/06/08 15:48:56 by fde-albe         ###   ########.fr        #
+#    Updated: 2022/06/08 16:25:46 by fde-albe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		=		pipex.c pipex_utils.c ft_memcmp.c \
+SRCS		=		pipex.c pipex_utils.c ft_memcmp.c ft_split.c ft_strlen.c \
 
 OBJS 		=		$(addprefix objs/,$(SRCS:.c=.o))
 
@@ -35,9 +35,9 @@ clean:
 fclean:		clean
 			@$(RM) $(NAME)
 
+re:         fclean all
+
 chrome:
 			@echo "Opening Google Chrome"
 			@sleep 2
 			@launchapp /Applications/Google\ Chrome.app
-
-re:         fclean all
