@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 SRCS		=		pipex.c pipex_utils.c ft_memcmp.c ft_split.c ft_strlen.c \
-					ft_substr.c ft_strdup.c \
+					ft_substr.c ft_strdup.c ft_strjoin.c \
 
 OBJS 		=		$(addprefix objs/,$(SRCS:.c=.o))
 
