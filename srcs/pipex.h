@@ -18,11 +18,12 @@
 # include <sys/wait.h>
 # include <fcntl.h>
 
-void    check_commands(int ac, char **av, char **envp);
+char  *check_commands(char *raw_cmd, char **envp);
 int 	ft_memcmp(const void *s1, const void *s2, size_t n);
 char	**ft_split(char const *s, char c);
 size_t  ft_strlen(const char *str);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strdup(const char *s1);
+char	*ft_strjoin(char const *s1,	char const *s2);
 
 #endif
